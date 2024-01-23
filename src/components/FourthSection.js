@@ -144,10 +144,10 @@ const FourthSection = () => {
           </label>
           <p className="text-[#fd4370] font-medium">{formErrors.message}</p>
 
-          <button className="flex">
+          <button className="flex rounded-full">
             <a
-              // href="mailto:simop.914@gmail.com"
-              className="xs:mb-28 md:mb-40 flex justify-center rounded-sm bg-[#fd4370] hover:bg-[#f73062] duration-300 py-4 ease-in-out xs:w-full md:w-1/4 lg:w-1/4 font-semibold"
+              href="mailto:simop.914@gmail.com"
+              className="rounded-full xs:mb-28 md:mb-40 flex justify-center  bg-[#fd4370] hover:bg-[#f73062] duration-300 py-4 ease-in-out xs:w-full md:w-1/4 lg:w-1/4 font-semibold"
             >
               Send message
             </a>

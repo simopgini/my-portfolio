@@ -10,9 +10,9 @@ const ThirdSection = () => {
         </p>
       </div>
       <h1 className="pb-24 lg:text-6xl lg:leading-snug md:text-5xl py-2 text-4xl font-semibold leading-normal">
-        Get a closer look at who I am.
+        Get a closer look at who I am
       </h1>
-      <div className="lg:flex lg:flex-row-reverse lg:justify-end lg:items-center ">
+      <div className="lg:flex lg:flex-row-reverse lg:justify-between lg:items-center">
         <div className="pb-24 xs:px-4 sm:pl-10 lg:px-0 lg:pl-0">
           <img
             className="animate-bounce rounded-full xs:h-full md:w-2/3 lg:h-auto lg:w-auto bg-[#00c0ff]"
@@ -26,13 +26,13 @@ const ThirdSection = () => {
             <div className="section-line bg-[#fd4370] w-6 h-1 mr-6"></div>
             <div className="animate-bounce2">Who am I?</div>
           </div>
-          <div className="pb-10  leading-loose text-gray-300 text-base font-medium animate-bounce2">
-            I’ve developed a passion for programming user-friendly responsive
-            apps 3 years ago. I enjoy using my creativity, actively seeking out
-            new technologies and acquiring new skills as a Front-End Developer.
-            I'm naturally curious, and perpetually working on improving the
-            design of the apps I'm working on.
-          </div>
+          <p className="pb-10  leading-loose text-gray-300 text-base font-medium animate-bounce2">
+            Three years ago, I discovered my love for crafting user-friendly and
+            responsive apps through programming. I find joy in unleashing my
+            creativity and constantly exploring new technologies as a Front-End
+            Developer. Being naturally curious, I'm always on a journey to
+            enhance the design of the apps I work on. 🚀
+          </p>
           <div className="pb-6 flex items-center">
             <div className="section-line bg-[#fd4370] w-6 h-1 mr-6"></div>
             <div className="animate-bounce2">Skills & Tools</div>
@@ -48,7 +48,7 @@ const ThirdSection = () => {
             </p>
           </div>
 
-          <button className="rounded-md bg-[#fd4370]  hover:bg-[#f73062] duration-300 ease-in-out p-4 px-8 font-semibold">
+          <button className="rounded-full bg-[#fd4370]  hover:bg-[#f73062] duration-300 ease-in-out p-4 px-8 font-semibold">
             <a href="#connect">Get in touch</a>
           </button>
         </div>

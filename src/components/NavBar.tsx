@@ -1,9 +1,9 @@
 import logo from "../images/logo.png";
 
+// w-full
 const NavBar = () => {
   return (
-    // w-full
-    <nav className=" flex justify-between items-center xs:mb-16 lg:mb-0 transition-all duration-200 ease-in-out">
+    <header className=" flex justify-between items-center xs:mb-16 lg:mb-0 transition-all duration-200 ease-in-out">
       <a href="#home" className="">
         <img
           alt="logo"
@@ -11,7 +11,7 @@ const NavBar = () => {
           src={logo}
         ></img>
       </a>
-      <div className="xs:space-x-4 sm:space-x-8 lg:space-x-10 text-gray-300 font-semibold">
+      <nav className="xs:space-x-4 sm:space-x-8 lg:space-x-10 text-gray-300 font-semibold">
         <a href="#work" className="hover:text-white duration-300 ease-in-out">
           Work
         </a>
@@ -24,8 +24,8 @@ const NavBar = () => {
         >
           Connect
         </a>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 

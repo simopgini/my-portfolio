@@ -29,6 +29,7 @@ const ProjectSection = () => {
                       transform: "none",
                       transformOrigin: "50% 50% 0px",
                       opacity: "1",
+                      transition: "transform 700ms ease-in-out",
                     }}
                   >
                     <a
@@ -39,7 +40,7 @@ const ProjectSection = () => {
                     >
                       <img
                         alt={project.title}
-                        className="object-cover hover:scale-105 mb-8 rounded-2xl"
+                        className="object-cover hover:scale-105 transition-transform duration-700 ease-in-out mb-8 rounded-2xl"
                         src={images[index]}
                       />
                     </a>

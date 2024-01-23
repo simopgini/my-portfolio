@@ -50,9 +50,12 @@ const SkillsComponent: React.FC<SkillsProps> = ({
     // md:items-start
     <ul
       key={id}
-      className="flex flex-col lg:items-center lg:mr-24 xl:pr-20 2xl:pr-28"
+      className="flex flex-col items-center lg:mr-8 xl:pr-20 2xl:pr-32"
     >
-      <li style={{ color }} className="text-6xl mb-4">
+      <li
+        style={{ color }}
+        className="text-6xl mb-4 hover:scale-105 transition-transform duration-500 ease-in-out"
+      >
         <IconComponent />
       </li>
       <h3 className="uppercase font-bold xs:pb-24 text-gray-300">{title}</h3>

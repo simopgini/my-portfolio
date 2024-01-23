@@ -73,7 +73,7 @@ const SkillsSection: React.FC = () => {
         </p>
       </div>
       <h1 className="text-center md:text-left pb-24 lg:text-6xl lg:leading-snug md:text-5xl py-2 text-4xl font-semibold leading-normal ">
-        My skills
+        Discover My Skills
       </h1>
 
       <div className="grid md:gap-1 lg:gap-8 xl:gap-0 2xl:gap-4 grid-cols-2 md:grid-cols-4 md:grid-rows-2 lg:grid-cols-5 lg:grid-rows-2 mb-40">

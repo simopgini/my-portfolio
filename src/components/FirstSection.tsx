@@ -1,5 +1,3 @@
-import React from "react";
-// import Button from "./Button";
 import helloImage from "../images/code.png";
 import Button from "./Button";
 import Card from "./Card";
@@ -9,19 +7,22 @@ const cards = [
     id: 1,
     icon: "BiSolidBriefcase",
     title: "Deeper Skillset",
-    description: "Souhda ihoasd haiodh adh ioasd hoasd. Guhda ihoas seh0 ieej.",
+    description:
+      "I bring a colorful palette of skills to the table, blending the artistry of HTML, the styling finesse of CSS, and the interactiveness of React.js to create engaging, responsive and user-friendly web experiences.",
   },
   {
     id: 2,
     icon: "BiSolidDiamond",
     title: "Creative Work",
-    description: "Souhda ihoasd haiodh adh ioasd hoasd. Guhda ihoas seh0 ieej.",
+    description:
+      " I thrive on turning imagination into reality, infusing passion into design, and crafting visually stunning solutions that captivate and inspire. I'm on a mission to make your user experience smooth and headache-free!",
   },
   {
     id: 3,
     icon: "BiSolidCog",
     title: "Strong Dedication",
-    description: "Souhda ihoasd haiodh adh ioasd hoasd. Guhda ihoas seh0 ieej.",
+    description:
+      "With unwavering dedication to finding and embracing new technologies, I bring your ideas to life. Constantly staying up-to-date, I add a sprinkle of functionality and a dash of creativity to create apps that users will love!",
   },
 ];
 
