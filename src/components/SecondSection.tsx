@@ -13,7 +13,7 @@ const SecondSection = () => {
       <h1 className="lg:text-6xl lg:leading-snug md:text-5xl py-2 pb-8 text-4xl font-semibold leading-normal ">
         Projects for you to see.
       </h1>
-      <p className="xs:pb-24">
+      <p className="xs:pb-24 text-gray-300">
         Check out a few of the main projects I have worked on, or some of my
         side projects on the left-hand side.
       </p>

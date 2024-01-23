@@ -13,20 +13,21 @@
     },
     {
       "id": 2,
-      "project": "rick",
-      "title": "Rick & Morty App",
-      "description": "The Rick and Morty API is an open REST API based on this famous television show. Designed a responsive React app where you can see the characters of the show, filter them down and extend the list. Fetched the API to get characters, pictures, episodes and location. Run tests with Jest to ensure the correctness of the codebase.",
-      "button_url": "https://rickandmorty-prova.netlify.app",
-      "image": "/images/1.png"
-    },
-    {
-      "id": 3,
       "project": "musify",
       "title": "Musify App",
       "description": "Designed a responsive app with Gatsby.js and Tailwind. It shows the most popular tracks and albums of my favourite artists selected on Spotify API. Used Gatsby.js as a static site generator to reduce site complexity by improving speed and reliability. Created the grid on different breakpoints with Tailwind assured app responsiveness on all the devices.",
       "button_url": "https://musify-simo.netlify.app",
       "image": "../images/2.png"
     },
+    {
+      "id": 3,
+      "project": "rick",
+      "title": "Rick & Morty App",
+      "description": "The Rick and Morty API is an open REST API based on this famous television show. Designed a responsive React app where you can see the characters of the show, filter them down and extend the list. Fetched the API to get characters, pictures, episodes and location. Run tests with Jest to ensure the correctness of the codebase.",
+      "button_url": "https://rickandmorty-prova.netlify.app",
+      "image": "/images/1.png"
+    },
+
     {
       "id": 4,
       "project": "netflix",
@@ -37,19 +38,19 @@
     },
     {
       "id": 5,
-      "project": "sunnyside",
-      "title": "Sunnyside Agency",
-      "description": "Agency website designed with CSS and SCSS.",
-      "button_url": "https://sunnysideagency-landing-page.netlify.app",
-      "image": "../images/sunnyside.png"
-    },
-    {
-      "id": 6,
       "project": "breathe",
       "title": "Breathe App",
       "description": "Breathe is a meditation app with the mission of making the world a happier place. My friend and I have created the app because we wanted to help people in need during the pandemic. The app has reached more than 8000 users since our launch in September 2020 with 100 daily active users. We've received several positive feedback on Google Play and App Store: the app average score is 4,5 stars",
       "button_url": "https://appbreathe.com",
       "image": "../images/cell.png"
+    },
+    {
+      "id": 6,
+      "project": "sunnyside",
+      "title": "Sunnyside Agency",
+      "description": "Agency website designed with CSS and SCSS.",
+      "button_url": "https://sunnysideagency-landing-page.netlify.app",
+      "image": "../images/sunnyside.png"
     }
   ]
 }

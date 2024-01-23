@@ -28,10 +28,10 @@ const cards = [
 const FirstSection = () => {
   return (
     <section id="hello-section" className="font-semibold py-8 ">
-      <div className="pt-10 lg:flex lg:items-end">
+      <div className="pt-10 lg:flex lg:items-end lg:justify-between">
         <div className="z-10">
           <h1 className="xs:mt-32 lg:mt-40 lg:text-6xl lg:leading-snug md:text-5xl py-2 text-4xl font-semibold leading-normal">
-            Hi! I'm <span className="text-[#f84572]">Simona</span>, a{" "}
+            Hi! I'm <span className="text-[#f84572]">Simona</span>, a <br></br>
             <span className="text-[#f84572]">Frontend Developer</span>
           </h1>
 
@@ -42,9 +42,10 @@ const FirstSection = () => {
 
           <Button />
         </div>
-        <div className="xs:mb-28 md:px-6 lg:px-0 lg:flex lg:justify-center lg:items-center lg:z-0	">
+        <div className="p-4 xs:mb-28 md:px-6 lg:px-0 md:flex md:justify-center lg:items-center lg:z-0	">
           <img
-            className="w-auto lg:w-2/5 lg:z-0 xs:animate-bounce lg:animate-bounce"
+            // 2xl:w-[600px]
+            className="w-auto md:w-2/4 lg:w-2/5 xl:w-3/5 2xl:w-[30rem] lg:z-0 xs:animate-bounce lg:animate-bounce"
             src={helloImage}
             alt="Mobile App Project"
           ></img>
@@ -52,7 +53,7 @@ const FirstSection = () => {
       </div>
 
       {/* <div className=" flex-nowrap md:flex md:flex-wrap lg:flex-nowrap  gap-8 lg:gap-12"> */}
-      <div className="grid gap-8 lg:gap-12 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1">
+      <div className="grid gap-8 lg:gap-12 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1 mb-40">
         {cards.map((card) => (
           <Card key={card.id} {...card} />
         ))}

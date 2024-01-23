@@ -4,6 +4,7 @@ import FirstSection from "./FirstSection";
 import SecondSection from "./SecondSection";
 import ThirdSection from "./ThirdSection";
 import Card from "./Card";
+import SkillsSection from "./SkillsSection";
 // import ContactForm from "./ContactForm"
 
 const MainBody = () => {
@@ -11,6 +12,7 @@ const MainBody = () => {
   return (
     <>
       <FirstSection />
+      <SkillsSection />
       <SecondSection />
       <ThirdSection />
       {/* 

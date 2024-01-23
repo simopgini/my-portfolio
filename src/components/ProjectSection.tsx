@@ -4,12 +4,12 @@
 import projectList from "../data/project-list.json";
 
 const images = [
-  require("../images/1.png"),
+  require("../images/111.png"),
   require("../images/2.png"),
+  require("../images/1.png"),
   require("../images/3.png"),
+  require("../images/5.png"),
   require("../images/4.png"),
-  require("../images/5.png"),
-  require("../images/5.png"),
 ];
 
 const ProjectSection = () => {
@@ -25,7 +25,6 @@ const ProjectSection = () => {
               >
                 <article>
                   <figure
-                    className="bg-gray-700"
                     style={{
                       transform: "none",
                       transformOrigin: "50% 50% 0px",
@@ -36,10 +35,11 @@ const ProjectSection = () => {
                       href={project.button_url}
                       target="_blank"
                       rel="noreferrer"
+                      className="rounded-2xl"
                     >
                       <img
                         alt={project.title}
-                        className="object-cover"
+                        className="object-cover hover:scale-105 mb-8 rounded-2xl"
                         src={images[index]}
                       />
                     </a>
@@ -47,7 +47,9 @@ const ProjectSection = () => {
                   <h3 className="mt-3 mb-6 text-3xl text-white">
                     {project.title}
                   </h3>
-                  <p className="text-sm font-normal">{project.description}</p>
+                  <p className="text-sm font-normal text-gray-300">
+                    {project.description}
+                  </p>
                 </article>
               </div>
             ))}
