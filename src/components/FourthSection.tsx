@@ -1,7 +1,7 @@
 import "../App.css";
 import { ContactForm } from "./ContactForm";
 
-const FourthSection = () => {
+const FourthSection: React.FC = () => {
   return (
     <section id="connect" className="font-semibold">
       <div className="mb-8 flex flex-row items-center">

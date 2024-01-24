@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { BiX } from "react-icons/bi";
 
-export const ContactForm = () => {
+export const ContactForm: React.FC = () => {
   const formRef: any = useRef();
   const [isValidEmail, setIsValidEmail] = useState(true);
   const [messageLength, setMessageLength] = useState(0);
@@ -11,12 +11,12 @@ export const ContactForm = () => {
   const minMessageLength = 10;
   const maxMessageLength = 800;
 
-  const validateEmail = (email: any) => {
+  const validateEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
 
-  const handleTextareaChange = (e: any) => {
+  const handleTextareaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const currentLength = e.target.value.length;
     setMessageLength(currentLength);
   };
@@ -76,9 +76,7 @@ export const ContactForm = () => {
 
         <label className="p-2">Email</label>
         <input
-          className={`block xs:w-full lg:w-2/4 p-2 rounded-md text-gray-600 ${
-            isValidEmail ? "" : "border-red-500"
-          }`}
+          className="block xs:w-full lg:w-2/4 p-2 rounded-md text-gray-600"
           type="email"
           name="email"
           onChange={(e) => setIsValidEmail(validateEmail(e.target.value))}
