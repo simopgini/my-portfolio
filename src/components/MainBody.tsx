@@ -16,9 +16,6 @@ const MainBody = () => {
       <SkillsSection />
       <SecondSection />
       <ThirdSection />
-      <ContactForm />
-      {/* 
-      <ContactForm /> */}
       <FourthSection />
     </>
   );

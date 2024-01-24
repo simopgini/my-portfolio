@@ -11,7 +11,7 @@
   justify-content: center;
   transition: right 0.5s ease-in-out; /* Adjust the duration as needed */
 }
-
+/* 
 .style-form {
   width: 400px;
 
@@ -63,7 +63,7 @@
       border: none;
     }
   }
-}
+} */
 
 .mobile-menu-container.slide-in {
   right: 0; /* Slide in from the right */
