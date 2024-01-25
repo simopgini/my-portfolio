@@ -1,10 +1,12 @@
 import { useState } from "react";
 import logo from "../images/logo.png";
 import { BiMenu, BiX } from "react-icons/bi";
+import "../App.css";
 
 // w-full
 const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState("work"); // Default active link
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -12,6 +14,8 @@ const NavBar = () => {
 
   const closeMenuAndScroll = (sectionId: string) => {
     setMenuOpen(false);
+    setActiveLink(sectionId);
+
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -33,25 +37,54 @@ const NavBar = () => {
           <a
             href="#work"
             onClick={() => closeMenuAndScroll("work")}
-            className="hover:text-white duration-300 ease-in-out"
+            className={`${
+              activeLink === "work" ? "active" : ""
+            } duration-300 ease-in-out`}
           >
             Work
           </a>
           <a
             href="#about"
             onClick={() => closeMenuAndScroll("about")}
-            className="hover:text-white duration-300 ease-in-out"
+            className={`${
+              activeLink === "about" ? "active" : ""
+            } duration-300 ease-in-out`}
           >
             About
           </a>
           <a
             href="#connect"
             onClick={() => closeMenuAndScroll("connect")}
-            className="hover:text-white duration-300 ease-in-out"
+            className={`${
+              activeLink === "connect" ? "active" : ""
+            } duration-300 ease-in-out`}
           >
             Connect
           </a>
         </nav>
+        {/* <nav className="hidden md:block space-x-4 text-gray-300 font-semibold">
+          <a
+            href="#work"
+            onClick={() => closeMenuAndScroll("work")}
+            className="hover:text-white hover:underline hover:underline-offset-8 duration-300 ease-in-out"
+          >
+            Work
+          </a>
+          <a
+            href="#about"
+            onClick={() => closeMenuAndScroll("about")}
+            className="hover:text-white hover:underline hover:underline-offset-8 duration-300 ease-in-out"
+          >
+            About
+          </a>
+          <a
+            href="#connect"
+            onClick={() => closeMenuAndScroll("connect")}
+            className="hover:text-white hover:underline hover:underline-offset-8 duration-300 ease-in-out"
+          >
+            Connect
+          </a>
+        </nav> */}
 
         <nav className="md:hidden z-50">
           {isMenuOpen ? (

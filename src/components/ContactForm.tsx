@@ -62,30 +62,30 @@ export const ContactForm: React.FC = () => {
   return (
     <>
       <form
-        className="style-form flex flex-col mb-40"
+        className="style-form flex flex-col"
         ref={formRef}
         onSubmit={sendEmail}
       >
-        <label className="pb-2">Name</label>
+        <label className="pb-2 text-gray-300">Name</label>
         <input
-          className="block xs:w-full lg:w-2/4 p-2 rounded-md text-gray-600"
+          className="block xs:w-full lg:w-2/4 p-2 rounded-md bg-gray-200 text-gray-600"
           type="text"
           name="name"
           required
         />
 
-        <label className="p-2">Email</label>
+        <label className="p-2 text-gray-300">Email</label>
         <input
-          className="block xs:w-full lg:w-2/4 p-2 rounded-md text-gray-600"
+          className="block xs:w-full lg:w-2/4 p-2 rounded-md bg-gray-200 text-gray-600"
           type="email"
           name="email"
           onChange={(e) => setIsValidEmail(validateEmail(e.target.value))}
           required
         />
 
-        <label className="p-2">Message</label>
+        <label className="p-2 text-gray-300">Message</label>
         <textarea
-          className="block xs:w-full lg:w-2/4 p-2 mb-1 text-gray-600 rounded-md min-h-40"
+          className="block xs:w-full lg:w-2/4 p-2 mb-1 bg-gray-200 text-gray-600 rounded-md min-h-40"
           name="message"
           onChange={handleTextareaChange}
           minLength={minMessageLength}

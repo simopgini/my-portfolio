@@ -1,3 +1,22 @@
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+/* New style for the active link */
+nav a.active {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
 .mobile-menu-container {
   position: fixed;
   top: 0;

@@ -15,7 +15,7 @@ const SecondSection = () => {
       </h1>
       <p className="xs:pb-24 text-gray-300">
         Take a friendly tour of some key projects I've had the pleasure of
-        working on!
+        working on! If you click on the pictures, you'll land to the websites.
       </p>
       <ProjectSection />
     </section>
