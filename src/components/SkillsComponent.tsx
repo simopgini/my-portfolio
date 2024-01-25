@@ -11,7 +11,6 @@ import {
   BiLogoJavascript,
 } from "react-icons/bi";
 import { IconType } from "react-icons";
-import { useState } from "react";
 
 const iconComponents: Record<string, IconType> = {
   BiLogoHtml5,
