@@ -65,7 +65,7 @@ const skillLogos = [
 
 const SkillsSection: React.FC = () => {
   return (
-    <section className="font-semibold  mb-40">
+    <section className="font-semibold">
       <div className="mb-8 flex flex-row items-center">
         <div className="section-line bg-[#fd4370] w-16 h-1 mr-6"></div>
         <p className="section-category  text-gray-300 text-base font-medium">
@@ -76,7 +76,7 @@ const SkillsSection: React.FC = () => {
         Discover My Skills
       </h1>
 
-      <div className="grid md:gap-1 lg:gap-8 xl:gap-0 2xl:gap-4 grid-cols-2 md:grid-cols-4 md:grid-rows-2 lg:grid-cols-5 lg:grid-rows-2 mb-40">
+      <div className="grid md:gap-1 lg:gap-8 xl:gap-0 2xl:gap-4 grid-cols-2 md:grid-cols-4 md:grid-rows-2 lg:grid-cols-5 lg:grid-rows-2 mb-20">
         {skillLogos.map((logo, index) => (
           <SkillsComponent key={logo.id} {...logo} index={index} />
         ))}
