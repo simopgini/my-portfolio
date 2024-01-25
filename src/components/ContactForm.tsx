@@ -76,7 +76,9 @@ export const ContactForm: React.FC = () => {
 
         <label className="p-2 text-gray-300">Email</label>
         <input
-          className="block xs:w-full lg:w-2/4 p-2 rounded-md bg-gray-200 text-gray-600"
+          className={`block xs:w-full lg:w-2/4 p-2 rounded-md bg-gray-200 text-gray-600 ${
+            isValidEmail ? "" : "border-red-500"
+          }`}
           type="email"
           name="email"
           onChange={(e) => setIsValidEmail(validateEmail(e.target.value))}
@@ -108,11 +110,11 @@ export const ContactForm: React.FC = () => {
       {isModalVisible && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
           <div className="relative bg-white  p-6 rounded-md shadow-md">
-            <p className="text-gray-600 mt-4 mb-8">Email sent successfully!</p>
+            <p className="text-gray-600 mt-8 mb-8">Email sent successfully!</p>
 
             <BiX
-              className=" absolute top-2 right-2 text-gray-600 cursor-pointer"
-              size={20}
+              className=" absolute top-2 right-2 text-black cursor-pointer"
+              size={24}
               onClick={() => setIsModalVisible(false)}
             />
 
