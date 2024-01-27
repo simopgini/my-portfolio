@@ -1,12 +1,9 @@
 import React, { useRef, useState } from "react";
-import emailjs from "emailjs-com";
-import { BiX } from "react-icons/bi";
 
 export const ContactForm: React.FC = () => {
   const formRef: any = useRef();
   const [isValidEmail, setIsValidEmail] = useState(true);
   const [messageLength, setMessageLength] = useState(0);
-  const [isModalVisible, setIsModalVisible] = useState(false);
 
   const minMessageLength = 10;
   const maxMessageLength = 800;
@@ -35,24 +32,7 @@ export const ContactForm: React.FC = () => {
       // const isValid = validateEmail(email) && message.length > minMessageLength;
 
       if (name && email && message && isValid) {
-        emailjs
-          .sendForm(
-            "service_rgvq35v",
-            "template_t9k5xp9",
-            formRef.current,
-            "XrphkE041injPua32"
-          )
-          .then(
-            (result) => {
-              console.log(result.text);
-              setIsModalVisible(true);
-              console.log("Message sent");
-            },
-            (error) => {
-              console.log(error.text);
-              console.log("An error has occurred");
-            }
-          );
+        window.location.href = `mailto:${email}`;
       } else {
         console.log("Validation failed. Please check your inputs.");
       }
@@ -106,27 +86,6 @@ export const ContactForm: React.FC = () => {
           Send
         </button>
       </form>
-
-      {isModalVisible && (
-        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
-          <div className="relative bg-white  p-6 rounded-md shadow-md">
-            <p className="text-gray-600 mt-8 mb-8">Email sent successfully!</p>
-
-            <BiX
-              className=" absolute top-2 right-2 text-black cursor-pointer"
-              size={24}
-              onClick={() => setIsModalVisible(false)}
-            />
-
-            <button
-              onClick={() => setIsModalVisible(false)}
-              className="flex font-semibold justify-center p-2 rounded-lg bg-[#fd4370] hover:bg-[#f73062] mx-auto w-full"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      )}
     </>
   );
 };

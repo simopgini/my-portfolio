@@ -1,3 +1,30 @@
+.challenge-item-details-icon {
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-left: 0.25rem;
+}
+
+.challenge-item-details.expanded .challenge-item-details-icon {
+  transform: rotate(180deg);
+}
+
+.challenge-item-description {
+  margin: 0;
+}
+
+.slide-example {
+  transition: transform 500ms ease-in-out;
+  transform: translateX(0%);
+}
+
+.slide-enter {
+  transform: translateX(0);
+}
+
+.slide-exit {
+  transform: translateX(30%);
+}
+
 nav a {
   color: #ccc;
   text-decoration: none;

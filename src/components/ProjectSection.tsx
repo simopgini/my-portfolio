@@ -1,6 +1,3 @@
-// import React, { useState } from "react";
-// import ProjectsInfo from "./ProjectsInfo";
-// import ProjectsCounterNav from "./ProjectsCounterNav";
 import projectList from "../data/project-list.json";
 
 const images = [

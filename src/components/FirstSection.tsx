@@ -2,6 +2,8 @@ import helloImage from "../images/code.png";
 import Button from "./Button";
 import Card from "./Card";
 
+import "../App.css";
+
 const cards = [
   {
     id: 1,
@@ -31,8 +33,9 @@ const FirstSection = () => {
     <section id="hello-section" className="font-semibold py-8 ">
       <div className="pt-10 lg:flex lg:items-end lg:justify-between">
         <div className="z-10">
-          <h1 className="xs:mt-32 lg:mt-40 lg:text-6xl lg:leading-snug md:text-5xl py-2 text-4xl font-semibold leading-normal">
-            Hi! I'm <span className="text-[#f84572]">Simona</span>, a <br></br>
+          {/* lg:mt-40 py-2  */}
+          <h1 className=" xs:mt-32 lg:mt-40 py-2 lg:text-6xl lg:leading-snug md:text-5xl text-4xl font-semibold leading-normal">
+            Hi, I'm <span className="text-[#f84572]">Simona</span>, a <br></br>
             <span className="text-[#f84572]">Frontend Developer</span>
           </h1>
 
@@ -43,10 +46,11 @@ const FirstSection = () => {
 
           <Button />
         </div>
+        {/* p-4  */}
         <div className="p-4 xs:mb-28 md:px-6 lg:px-0 md:flex md:justify-center lg:items-center lg:z-0	">
           <img
             // 2xl:w-[600px]
-            className="w-auto md:w-2/4 lg:w-2/5 xl:w-3/5 2xl:w-[30rem] lg:z-0 xs:animate-bounce lg:animate-bounce"
+            className="w-auto md:w-2/4 lg:w-3/4 xl:w-4/6 2xl:w-[30rem] lg:z-0 xs:animate-bounce lg:animate-bounce"
             src={helloImage}
             alt="Mobile App Project"
           ></img>
